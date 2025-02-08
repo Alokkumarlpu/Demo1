@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #dfdddd;
+            
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            margin: 0%;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 20px;
+        }
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            top: 0;
+            left: 0;
+            gap: 20px;
+        }
+        .hero {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            width: 400px;
+        }
+        
+        .hero h2 {
+            color: rgb(25, 146, 25);
+        }
+        .right-column {
+            width: 500px;
+            padding-left: 1000px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: green;
+        }
+        @media (max-width: 700px) {
+            .container {
+                flex-direction: column;
+            }
+            .left-column,
+            .right-column {
+                width: 100%;
+                padding: 0;
+            }
+            .right-column {
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Website Task</h1>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="container">
+        <div class="left-column">
+            <div class="hero">
+                <h2>About CSS</h2>
+                <p>Cascading Style Sheet(CSS) allow you to style and layout your web pages, adding colors, spacing and more.</p>
+            </div>
+
+            <div class="hero">
+                <h2>Responsive Design</h2>
+                <p>
+                    Responsive design ensures your webpage looks great on all devices, from desktops to mobile phones.
+                </p>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="hero">
+                <h2>Box Model</h2>
+                <p>The css box model describes the rectangular boxes generated for elements. It includes margins, borders, padding and the actual content.</p>
+            </div>
+        </div>
+    
+    </section>
+    <footer>
+        <p>Created by Alok Kumar | Follow us on | <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a></p>
+    </footer>
+</body>
+</html>
